@@ -1,0 +1,10 @@
+Exception in Python.
+test = [1,2,3]
+for i in test:
+print(i)
+
+Output:
+File “”, line 3
+print(i)
+^
+Indentation Error: expected an indented block
