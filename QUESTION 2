@@ -1,0 +1,14 @@
+Raise Exceptions Python.
+class RaisingValueError(Exception):
+def __init__(self, data):
+self.data = data
+def __str__(self):
+return repr(self.data)Total_movie = int(input(“Enter Total Movies Seen: “))
+
+try:
+Num_of_genres = int(input(“Enter Num of genres: “))
+if(Num_of_genres < 1):
+raise RaisingValueError(“Number of genres can’t be less than 1”)
+
+except RaisingValueError as e:
+print (“Try entering again:”, e.data)
