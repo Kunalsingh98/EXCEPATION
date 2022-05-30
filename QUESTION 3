@@ -1,0 +1,21 @@
+Conflicts in Python Exception Handling.
+import timeit
+setup=”any=0″
+statement_1 = ”’\
+
+try:
+b=10/a
+
+except ZeroDivisionError:
+pass”’
+satement_2 = ”’\
+
+if any !=0:
+b=10/a”’
+
+print(“time for statement_1=”,timeit.timeit(stmt1,setup,number=100000))
+print(“time for statement_2=”,timeit.timeit(stmt2,setup,number=100000))
+
+Output:
+time= 0.07828223999999295
+time= 0.0019908266666845975
