@@ -1,0 +1,12 @@
+Try-except-else Clause.
+try:
+Your statements
+
+except Exception_1:
+If there is Exception_1 then execute this block- statement
+
+except Exception_2:
+If there is Exception_2 then execute this block-statement
+
+else:
+if no exception was raised-statement
